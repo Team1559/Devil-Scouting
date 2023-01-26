@@ -404,15 +404,23 @@ body {
         grid-template-rows: 40px 20px auto;
     }
 
-	#dashboard > div.visible {
-		height: calc(100vh);
-	}
+    #dashboard > div.visible {
+        height: calc(100vh - 40px);
+    }
 
-	#main-list {
-		padding: 25px 0;
-	}
+    #main-list > div:first-child {
+        margin-top: 25px;
+    }
 
-	#side-list {
-		padding: 25px 0;
-	}
+    #side-list > div:first-child {
+        margin-top: 25px;
+    }
+
+    #main-list > div:last-child {
+        margin-bottom: 25px;
+    }
+
+    #side-list > div:last-child {
+        margin-bottom: 25px;
+    }
 }
